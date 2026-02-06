@@ -1,0 +1,159 @@
+<!-- 1. Design a HTML page for your department with following HTML5 elements:
+i) Text Formatting elements ii) Links iii) Images iv) Tables v) list vi) video -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab1</title>
+    <style>
+        *{ 
+            
+            background-color: rgb(255, 242, 235);
+        }
+        .first {
+            text-align: center;
+        }
+
+        .second {
+            text-align: center;
+            margin-top: -20px;
+        }
+
+        #bar {
+            text-align: end;
+            
+        }
+
+        a {
+            font-size: 25px;
+            text-decoration: none;
+            color: black;
+            padding-right: 6px;
+        }
+        
+        #about p {
+            font-size: 20px;
+            margin-top: -16px;
+
+        }
+
+        #about #depatments #faculty h2 {
+            font-size: 45px;
+        }
+          #depatments1   h2 {
+            font-size: 45px;
+        }
+        #departments ol {
+            font-size: 25px;
+            margin-top: -16px;
+        }
+        #departments1  ul{
+            font-size: 25px;
+            margin-top: -16px;
+        }
+        #faculty table {
+            margin-top: -10px;
+            font-size: 25px;
+        }
+        .responsive .video{
+            width: 372px;
+            height: 197px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="first"> Dr. Ambedkar Institute of Technology</h1>
+    <h3 class="second">Department Of Computer Science</h3><hr>
+    <div id="bar">
+        <a href="#about">About</a>
+        <a href="#departments">Departments</a>
+        <a href="#faculty">Faculty</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+        <hr>
+    </div>
+
+    <div id="about" >
+        <h2>About Us</h2>
+        <p><span style="font-weight: bold;">Dr. Ambedkar Institute of Technology (Dr. AIT) </span>was founded by  <span style="font-weight: bold;">M.H. Jayaprakash Narayan </span> in 1980. Named after
+            Dr. B.R. Ambedkar, the institute is affiliated to Visvesvaraya Technological University (VTU), Belagavi and
+            is recognized and accredited by AICTE and NBA respectively. The institution is accredited by NAAC with ‘A+’
+            Grade. <span style="text-decoration: underline;">The Institution has achieved 163 Rank in National Institutional Ranking Framework (NIRF).</span>
+            Welcome to the Computer Science and Engineering programme at Dr.Ambedkar Institute of Technology, Bengaluru.
+            The department was established in the year 1987. It presently offers B.E., M.Tech. , MCA and Ph.D. degree
+            programmes. <br><br>
+        </p>       
+        <hr>
+    </div>
+    <div id="departments">
+        <h2>Courses</h2>
+        <ol type="1">
+            <li>Artificial Intelligence & Machine Learning </li>
+            <li>Software Engineering & Systems</li>
+            <li>Networks & Security</li>
+            <li>Data Science & Databases</li>
+        </ol>
+        <hr>
+    </div>
+
+    <div id="departments1">
+        <h2>Departments</h2>
+        <ul type="square">
+            <li>Bachelor of Engineering </li>
+            <li>Master of Technology</li>
+            <li>Master of Business Administration</li>
+            <li>Master Of Computer Applications</li>
+        </ul>
+        <hr>
+    </div>
+
+    <div id="faculty">
+        <h2>Faculty</h2>
+        <table border="1">
+            <tr>
+                <th>Name</th>
+                <th>Designation</th>
+                <th>Qualification</th>
+            </tr>
+            <tr>
+                <td>Dr. Rajshekhar Ghogge</td>
+                <td>Professor and HOD</td>
+                <td>Ph.D</td>
+            </tr>
+            <tr>
+                <td>Mrs. Shobha Rani B R</td>
+                <td>Associate Professor</td>
+                <td>MCA</td>
+            </tr>
+            <tr>
+                <td>Dr. Chandrakanth G Pujari</td>
+                <td> Professor</td>
+                <td>MCA, M. Tech, Ph. D</td>
+            </tr>
+            <tr>
+                <td>Dr.Indumathi S K</td>
+                <td>Associate Professor</td>
+                <td>M.C.A., M.Phil., Ph.D</td>
+            </tr>
+ 
+        </table>
+        <hr>
+    </div>
+    <div id="gallery">
+        <h2>Gallery</h2>
+        <img class="responsive"
+            src="https://campuspro.co.in/collage-image/1749885519_row_41.jpg"
+            alt="Campus building">
+             <img class="responsive"
+            src="&shttps://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWHWG2lpqSe-dpPBARMa9ErtGSsbtdpkONCw"
+            alt="Campus Building">
+              <h2>Campus Tour</h2>
+              <iframe width="372" height="197" src="https://www.youtube.com/embed/Izvrrh4nc60?si=whIlBVPNS8-vswAz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+</body>
+</html>
