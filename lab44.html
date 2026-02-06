@@ -1,0 +1,192 @@
+<!-- Design a web page with following features:
+• Offered Courses with Carousel
+• Course Tracking with Progress bars
+• Course Details with Expand/Collapse -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>SkillMaster - ABC College</title>
+
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        * {
+            font-family: var(--bs-body-font-family);
+        }
+    </style>
+</head>
+
+<body class="bg-light">
+
+    <!-- HEADER -->
+    <nav class="navbar navbar-dark bg-primary mb-4">
+        <div class="container-fluid">
+            <span class="navbar-brand mb-0 h1">  ABC College of Engineering</span>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <!-- CAROUSEL -->
+        <h2 class="text-center mb-3">Offered Courses</h2>
+
+        <div id="courseCarousel" class="carousel slide mb-5 shadow rounded" data-bs-ride="carousel">
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <img src="https://images.wondershare.com/filmora/article-images/python-text-to-image-1.jpg"
+                        class="d-block w-100" alt="Python Programming">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="https://www.mygreatlearning.com/blog/wp-content/uploads/2019/09/What-is-data-science-2.jpg"
+                        class="d-block w-100" alt="Data Science Basics">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="https://c8.alamy.com/comp/D0X0AW/web-development-concept-in-word-tag-cloud-on-white-background-D0X0AW.jpg"
+                        class="d-block w-100" alt="Web Development">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="https://www.shutterstock.com/image-vector/artificial-intelligence-text-vector-ai-260nw-2318583011.jpg"
+                        class="d-block w-100" alt="AI Foundations">
+                </div>
+
+            </div>
+
+            <!-- Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#courseCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#courseCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+
+
+        <!-- PROGRESS BARS -->
+        <h2 class="mb-3">Course Progress Tracking</h2>
+
+        <div class="mb-3">
+            <label class="fw-bold">Python Programming – 70%</label>
+            <div class="progress">
+                <div class="progress-bar bg-primary" style="width: 70%">70%</div>
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label class="fw-bold">Data Science  – 45%</label>
+            <div class="progress">
+                <div class="progress-bar bg-info" style="width: 45%">45%</div>
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label class="fw-bold">Web Development – 90%</label>
+            <div class="progress">
+                <div class="progress-bar bg-success" style="width: 90%">90%</div>
+            </div>
+        </div>
+
+        <div class="mb-4">
+            <label class="fw-bold">AI Foundations – 30%</label>
+            <div class="progress">
+                <div class="progress-bar bg-warning" style="width: 30%">30%</div>
+            </div>
+        </div>
+
+
+        <!-- ACCORDION FOR COURSE DETAILS -->
+        <h2 class="mb-3">Course Details</h2>
+
+        <div class="accordion mb-5" id="courseDetails">
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#python">
+                        Python Programming
+                    </button>
+                </h2>
+                <div id="python" class="accordion-collapse collapse show">
+                    <div class="accordion-body">
+                        This Python Programming course introduces learners to the fundamentals of Python, one of the
+                        most versatile programming languages. Students will learn variables, data types, control
+                        structures, functions, file handling, and object-oriented programming, while gaining hands-on
+                        experience with practical projects. The course also covers popular Python libraries for data
+                        analysis and visualization, enabling learners to build automation scripts, analyze datasets, and
+                        create small applications. By the end of the course, participants will be able to write clean,
+                        efficient Python code and apply it to real-world problems.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#datascience">
+                        Data Science 
+                    </button>
+                </h2>
+                <div id="datascience" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        This Data Science course teaches learners how to collect, clean, analyze, and visualize data to
+                        extract meaningful insights. Students will learn essential tools and techniques, including
+                        Python, R, SQL, statistics, and machine learning, through hands-on projects. By the end of the
+                        course, participants will be able to analyze datasets, build predictive models, and make
+                        data-driven decisions for real-world applications. </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#webdev">
+                        Web Development
+                    </button>
+                </h2>
+                <div id="webdev" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        This Web Development course teaches learners how to design and build modern, responsive websites
+                        and web applications. Students will learn front-end technologies like HTML, CSS, and JavaScript,
+                        as well as back-end development with databases, server-side scripting, and frameworks. By the
+                        end of the course, participants will be able to create fully functional websites and deploy them
+                        online. </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#ai">
+                        AI Foundations
+                    </button>
+                </h2>
+                <div id="ai" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        This AI Foundations course introduces learners to the principles and techniques of artificial
+                        intelligence, including machine learning, neural networks, and natural language processing.
+                        Students will gain hands-on experience with AI tools and frameworks, learning to build simple
+                        models and intelligent systems. By the end of the course, participants will understand core AI
+                        concepts and be able to apply them to real-world problems. </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<footer class="bg-dark text-white text-center py-3">
+        &copy; 2025 MySite. All rights reserved.
+      </footer>
+
+</body>
+
+</html>
