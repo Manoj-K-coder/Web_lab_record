@@ -1,0 +1,10 @@
+/* External CSS */
+h3 {
+    color: darkblue;
+    text-decoration: underline;
+}
+
+.external-text {
+    background-color:pink;
+    padding: 10px;
+}
