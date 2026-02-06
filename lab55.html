@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Homepage</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Hero section */
+    .hero {
+      height: 500px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+    }
+    .hero h1 {
+      font-size: 48px;
+    }
+    /* Cards section */
+    .feature-card {
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .feature-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+    .feature-card {
+  transition: transform 0.3s, box-shadow 0.3s;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centers content horizontally */
+  text-align: center;  /* centers text */
+}
+
+.feature-card img {
+  max-width: 80%;   /* optional: makes images smaller and centered */
+  height: auto;
+  margin: 20px 0;   /* spacing around image */
+}
+
+.feature-card .card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="#">ABC College of Engineering</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" id="home-tab" data-bs-toggle="tab" href="#homeContent">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#signInModal">Sign In</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Tab Content -->
+  <div class="tab-content">
+
+    <!-- Home Tab -->
+    <div class="tab-pane fade show active" id="homeContent">
+      <br><br><br>
+      <!-- Hero Section -->
+      <div class=" text-center">
+        <div>
+          <h1>Welcome to   ABC College of Engineering</h1>
+          <p class="lead">“Transforming Skills Into Success.”</p>
+          <a href="#" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#signInModal">Sign In</a>
+        </div>
+      </div>
+
+      <!-- Features Section -->
+       
+      <div class="container my-5">
+        <h2 class="text-center mb-4">Offered Courses </h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card feature-card shadow-sm">
+              <img src="https://images.wondershare.com/filmora/article-images/python-text-to-image-1.jpg" class="card-img-top" alt="Feature 1">
+              <div class="card-body">
+                <h5 class="card-title">Python Programming</h5>
+                <p class="card-text">This course covers Python basics, loops, functions, OOP, and file handling.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-4">
+            <div class="card feature-card shadow-sm">
+              <img src="https://c8.alamy.com/comp/D0X0AW/web-development-concept-in-word-tag-cloud-on-white-background-D0X0AW.jpg" class="card-img-top" alt="Feature 3">
+              <div class="card-body">
+                <h5 class="card-title">Web Development</h5>
+                <p class="card-text">HTML, CSS, JavaScript fundamentals along with building simple web apps.</p>
+              </div>
+            </div>
+          </div>
+
+          
+            <div class="col-md-4">
+            <div class="card feature-card shadow-sm">
+              <img src="https://www.shutterstock.com/image-vector/artificial-intelligence-text-vector-ai-260nw-2318583011.jpg" class="card-img-top" alt="Feature 3">
+              <div class="card-body">
+                <h5 class="card-title">AI Foundations </h5>
+                <p class="card-text">Understand AI concepts, neural networks, deep learning, and practical AI tools.</p>
+              </div>
+            </div>
+          </div>
+         
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer class="bg-dark text-white text-center py-3">
+        &copy; 2025 MySite. All rights reserved.
+      </footer>
+
+    </div>
+  </div>
+
+  <!-- Sign In Modal -->
+  <div class="modal fade" id="signInModal" tabindex="-1" aria-labelledby="signInModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="signInModalLabel">Sign In</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="username" class="form-label">Username</label>
+              <input type="text" class="form-control" id="username" placeholder="Enter username">
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">Password</label>
+              <input type="password" class="form-control" id="password" placeholder="Enter password">
+              <div class="form-text">Password should be minimum 8 characters.</div>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Sign In</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
