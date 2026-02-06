@@ -1,0 +1,91 @@
+<!-- b) Develop a web page that incorporates following CSS styles:
+i) font ii) list iii) text iv) links v) box -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My College Web Page</title>   
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color:whitesmoke;
+        }
+        h1 {
+            text-align: center;
+            color: blue;
+        }
+        /* Box Style */
+        .box {
+            width: 500px;
+            padding: 20px;
+            margin: 20px auto;
+ 
+            border: 2px solid black;
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px gray;
+        }
+        /* List Style */
+        ul ol{
+            list-style-type: square;
+            color:black;
+            padding-left: 40px;
+        }
+        /* Text Style */
+        p {
+            text-align: justify;
+            line-height: 1.6;
+        }
+        /* Link Style */
+        a:link {
+            color: blue;
+            text-decoration: none;
+        }
+        a:hover {
+            color: palegreen;
+            text-decoration: underline;
+        }
+        a:visited {
+            color: purple;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Welcome to Dr. Ambedkar Institute of Technology </h1> 
+    <p style="color: green; text-align: center;">
+        Outer Ring Road, Near Jnana Bharathi Campus, Mallathahalli, Bengaluru, Karnataka, 560056
+    </p>
+
+    <div class="box">
+        <h2>About Our College</h2>
+        <p>
+            Dr. Ambedkar Institute of Technology (Dr. AIT) was founded by M.H. Jayaprakash Narayan in 1980. Named after
+            Dr. B.R. Ambedkar, the institute is affiliated to Visvesvaraya Technological University (VTU), Belagavi and
+            is recognized and accredited by AICTE and NBA respectively. The institution is accredited by NAAC with ‘A+’
+            Grade. The Institution has achieved 163 Rank in National Institutional Ranking Framework (NIRF).
+        </p>
+        <h3>Departments</h3>
+        <ul>
+            <li>Bachelor of Engineering </li>
+            <li>Master of Technology</li>
+            <li>Master of Business Administration</li>
+            <li>Master Of Computer Applications</li>
+        </ul>
+
+         <h2>Courses</h2>
+        <ol type="1">
+            <li>Artificial Intelligence & Machine Learning </li>
+            <li>Software Engineering & Systems</li>
+            <li>Networks & Security</li>
+            <li>Data Science & Databases</li>
+        </ol>
+
+
+        <h3>Useful Links</h3>
+        <p>
+            Visit our official website:
+            <a href="https://drait.edu.in/">Click Here</a>
+        </p>
+    </div>
+</body>
+
+</html>
