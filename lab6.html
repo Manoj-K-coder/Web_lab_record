@@ -1,0 +1,142 @@
+ <!-- TechWave Solutions, a rapidly growing IT services company, is hiring fresh
+graduates and experienced professionals for multiple roles such as Software
+Developer, Web Designer, Data Analyst, System Administrator, and Project
+Manager. Design Online Job Application Portal to collect important applicant
+information and provide immediate confirmation through a modal popup. -->
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TechWave Solutions - Job Application Portal</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="#">TechWave Solutions</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" id="home-tab" data-bs-toggle="tab" href="#homeContent">Home</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<div class="container mt-5">
+
+  <!-- Header -->
+  <div class="text-center mb-4">
+    <h1 class="text-primary fw-bold">TechWave Solutions</h1>
+    <h4 class="fw-semibold">Online Job Application Portal</h4>
+  </div>
+
+  <!-- Application Form -->
+  <div class="card shadow p-4">
+    <h5 class="mb-3">Applicant Information</h5>
+
+    <!-- Added form id -->
+    <form id="applicationForm" action="#" method="post" enctype="multipart/form-data">
+
+      <!-- Full Name & Email -->
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <label for="fullName" class="form-label">Full Name</label>
+          <input type="text" class="form-control" id="fullName" name="fullName" placeholder="Enter Your Name" required>
+        </div>
+        <div class="col-md-6">
+          <label for="email" class="form-label">Email Address</label>
+          <input type="email" class="form-control" id="email" name="email" placeholder="example@email.com" required>
+        </div>
+      </div>
+
+      <!-- Phone & Experience -->
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <label for="phone" class="form-label">Phone Number</label>
+          <input type="tel" class="form-control" id="phone" name="phone" placeholder="1234567890" pattern="[0-9]{10}" required>
+          <div class="form-text">Enter 10-digit number</div>
+        </div>
+        <div class="col-md-6">
+          <label for="experience" class="form-label">Experience Level</label>
+          <select class="form-select" id="experience" name="experience" required>
+            <option selected disabled>Choose...</option>
+            <option>Fresher</option>
+            <option>1–2 Years</option>
+            <option>3–5 Years</option>
+            <option>5+ Years</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Job Role -->
+      <div class="mb-3">
+        <label for="jobRole" class="form-label">Apply For</label>
+        <select class="form-select" id="jobRole" name="jobRole" required>
+          <option selected disabled>Select Job Role...</option>
+          <option>Software Developer</option>
+          <option>Web Designer</option>
+          <option>Data Analyst</option>
+          <option>System Administrator</option>
+          <option>Project Manager</option>
+        </select>
+      </div>
+
+      <!-- Resume Upload -->
+      <div class="mb-3">
+        <label for="resume" class="form-label">Upload Resume (PDF/DOC)</label>
+        <input type="file" class="form-control" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+      </div>
+
+      <!-- Button that opens modal -->
+      <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#successModal">
+        Submit Application
+      </button>
+
+    </form>
+  </div>
+
+</div>
+
+<!-- Success Modal (Placed OUTSIDE the form correctly) -->
+<div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header bg-success text-white">
+        <h5 class="modal-title" id="successModalLabel">Confirm Submission</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        Your application is ready to be submitted.
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+
+        <!-- This button submits the form -->
+        <button type="submit" form="applicationForm" class="btn btn-success">
+          Submit Now
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<br><br><br><br>
+<footer class="bg-dark text-white text-center py-3">
+  &copy; 2025 MySite. All rights reserved.
+</footer>
+
+</body>
+</html>
