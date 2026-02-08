@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="book.xsl"?>
+<book_store>
+<book>
+<title>JAVA</title>
+<author>Manoj</author>
+</book>
+<book>
+<title>DBMS</title>
+<author>Adarsh</author>
+</book>
+<book>
+<title>C</title>
+<author>Suhas</author>
+</book>
+</book_store>
