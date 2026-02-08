@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Display JSON data.</h2>
+<p id="demo"></p>
+<script type="text/javascript" src="emp.JSON" ></script>
+
+<script>
+//document.write("Json data Reading");
+var mydata = JSON.parse(data);
+           
+ let txt = "<table border='1'>"
+ txt+= "<tr><th>" + "Name" + "</th>" + "<th>" + "Salary" + "</th>" + "<th>" + "Organization" + "</th>"+"<th>" + "Designation" + "</th></tr>"
+  for (let x in mydata) {
+      txt += "<tr><td>" + mydata[x].Empname + "</td>" + "<td>" + mydata[x].salary + "</td>" + "<td>" + mydata[x].Organization + "</td>"+"<td>"+ mydata[x].designation + "</td></tr>";
+   }
+  txt += "</table>"
+  document.getElementById("demo").innerHTML = txt;
+ </script>
+</body>
+</html>

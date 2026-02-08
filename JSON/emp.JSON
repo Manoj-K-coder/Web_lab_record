@@ -1,0 +1,27 @@
+data = '[
+    {
+        "Empname": "Hasini",
+        "salary": "200000",
+        "Organization": "Deloitte",
+        "designation": "VP"
+    },
+    {
+        "Empname": "Manoj",
+        "salary": "200000",
+        "Organization": "Supreme Court",
+        "designation": "Judge"
+    },
+    {
+        "Empname": "Adarsh",
+        "salary": "200000",
+        "Organization": "TCS",
+        "designation": "Analyst"
+    },
+    {
+        "Empname": "Manjunath",
+        "salary": "500000",
+        "Organization": "Zomato",
+        "designation": "CFO"
+    }
+]';
+
